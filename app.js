@@ -1,7 +1,8 @@
+require('dotenv').config();
 var jimp = require('jimp');
 const express = require('express');
 const app = express();
-const port = 3003;
+const port = process.env.PORT;
 var path = require('path');
 var bodyParser = require('body-parser');
 
@@ -10,6 +11,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
+// require('./config/dbConnect')
 
 app.get('/', (req, res) => {
   let { x, y } = req.query;
