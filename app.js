@@ -2,7 +2,7 @@ require('dotenv').config();
 var jimp = require('jimp');
 const express = require('express');
 const app = express();
-const port = process.env.PORT;
+const port = process.env.PORT || 5000;
 var path = require('path');
 var bodyParser = require('body-parser');
 
