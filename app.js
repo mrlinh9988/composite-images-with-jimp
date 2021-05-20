@@ -42,6 +42,12 @@ app.get('/', (req, res) => {
     });
 });
 
+app.get('/alo', (req, res) => {
+  res.json({
+    message: 'alo'
+  })
+})
+
 app.listen(port, () => {
   console.log('server start om port ' + port);
 });
