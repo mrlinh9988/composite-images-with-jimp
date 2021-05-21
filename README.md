@@ -18,4 +18,4 @@ $ node composite
 Jimp is a pure JavaScript image editor for Node. More about jimp: https://www.npmjs.com/package/jimp
 
 New to Node? Get started with Node.js: https://nodejs.org/en/
-Nguyen hai 123222323232
+Nguyen hai 12322232323221212
